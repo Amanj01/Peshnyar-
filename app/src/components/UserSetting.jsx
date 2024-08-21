@@ -115,7 +115,7 @@ const UserSetting = () => {
               name="username"
               value={formData1.username}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg"
+              className="w-full p-3 border rounded-lg dark:text-black"
               placeholder="Username"
             />
           </div>
@@ -126,7 +126,7 @@ const UserSetting = () => {
               name="email"
               value={formData1.email}
               onChange={handleChange}
-              className="w-full p-3 border rounded-lg"
+              className="w-full p-3 border rounded-lg dark:text-black"
               placeholder="Email"
             />
           </div>
@@ -137,7 +137,7 @@ const UserSetting = () => {
               name="password"
               value={formData1.password}
               onChange={handleChange}
-              className="w-full p-3 border  rounded-lg"
+              className="w-full p-3 border dark:text-black rounded-lg"
               placeholder="Password"
             />
           </div>
