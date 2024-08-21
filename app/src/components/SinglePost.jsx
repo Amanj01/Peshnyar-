@@ -87,7 +87,7 @@ const SinglePost = () => {
                   type="text"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg dark:text-white dark:bg-gray-900"
                 />
               ) : (
                 <p className="text-gray-500 dark:text-white">{post.title}</p>
@@ -99,7 +99,7 @@ const SinglePost = () => {
                   type="text"
                   value={categories}
                   onChange={(e) => setCategories(e.target.value)}
-                  className="w-full px-3 py-2 border rounded-lg"
+                  className="w-full px-3 py-2 border rounded-lg dark:text-white dark:bg-gray-900"
                 />
               ) : (
                 <span className="text-blue-800 text-sm font-semibold px-2.5 py-0.5 rounded dark:text-blue-700">{post.categories}</span>
@@ -118,7 +118,7 @@ const SinglePost = () => {
               <textarea
                 value={desc}
                 onChange={(e) => setDesc(e.target.value)}
-                className="w-full px-3 py-2 border rounded-lg h-32 resize-none"
+                className="w-full px-3 py-2 dark:text-white dark:bg-gray-900 border rounded-lg h-32 resize-none"
               ></textarea>
             ) : (
               <p>{post.desc}</p>
