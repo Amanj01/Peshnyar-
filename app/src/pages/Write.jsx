@@ -146,7 +146,7 @@ const Write = () => {
         
         {/* Categories Section */}
         <div className="mt-3">
-          <label htmlFor="categories" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="categories" className="block text-sm font-medium text-gray-700 dark:text-white">
             Categories
           </label>
           <input
@@ -154,7 +154,7 @@ const Write = () => {
             onChange={e => setCategories(e.target.value)}
             id="categories"
             name="categories"
-            className="mt-1 block h-10 w-full border-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="mt-1 block h-10 w-full border-2 dark:text-white dark:bg-gray-900 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             placeholder="Enter categories (comma-separated)"
           />
         </div>
