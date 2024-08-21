@@ -129,7 +129,7 @@ const Navbar = () => {
         </div>
 
         <div className="search flex space-x-4 justify-end items-center">
-        <Link to="/setting"> <i className="text-black dark:text-white cursor-pointer text-lg transition ease-in-out duration-300">{user.username}</i> </Link>
+          {isLogin && <Link to="/setting"> <i className="text-black dark:text-white cursor-pointer text-lg transition ease-in-out duration-300">{user.username}</i> </Link>}
           {user && isLogin ? (
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-400 cursor-pointer">
               <Link to="/setting">
